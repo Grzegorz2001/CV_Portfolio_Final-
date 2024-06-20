@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+<html lang="en"></html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <title>Grzegorz Łapiński 157735</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel = "stylesheet" type = "text/css" href = "style.css">
     </head>
-    <body>
         <div class = "container">
             <div class = "left_Side">
                 <div class = "profileText">
@@ -78,16 +79,24 @@
 
             </div>
             <div class = "right_Side">
-                <div class = "about"></div>
+                <div id="timer" class = "timerc"></div>    
+                <br><br>
+
+                <div class = "about">
                 <h2 class = "title2">Profile</h2>
-                <p>
-                    Hello, my name is Grzesiek. I am currently a part-time student majoring in computer science. First of all, I am
-                    sociable, conscientious and responsible. I like challenges, new opportunities to expand my qualifications and good work
-                    atmosphere. He is most interested in technological innovations (mainly PC), games (mainly PC and PS), and people
-                    psychology, politics, investments and business. <br><br>I cope well with both physical and physical work
-                    intellectual. I have fun building/repairing devices (e.g. computers, laptops, etc.). I'm currently studying
-                    program in Kotlin and Swift (additionally C++ and Java, the basics of which I learned during classes).
-                </p>
+                    <div class = "box">
+                        <div class = "text">
+                            <p>
+                                Hello, my name is Grzesiek. I am currently a part-time student majoring in computer science. First of all, I am
+                                sociable, conscientious and responsible. I like challenges, new opportunities to expand my qualifications and good work
+                                atmosphere. He is most interested in technological innovations (mainly PC), games (mainly PC and PS), and people
+                                psychology, politics, investments and business. <br><br>I cope well with both physical and physical work
+                                intellectual. I have fun building/repairing devices (e.g. computers, laptops, etc.). I'm currently studying
+                                program in Kotlin and Swift (additionally C++ and Java, the basics of which I learned during classes).
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <div class = "about">
                     <h2 class = "title2">Experience</h2>
                     <div class = "box">
@@ -121,7 +130,7 @@
                     <div class = "box">
                         <h4>HTML</h4>
                         <div class = "percent">
-                            <div style = "width: 95%;"></div>
+                            <div class="progress" style = "width: 95%;"></div>
                         </div>
                     </div>
                     <div class = "box">
@@ -150,10 +159,11 @@
                         <li><i class="fa fa-tachometer" aria-hidden="true"></i>Technologies</li>
                         <li><i class="fa fa-globe" aria-hidden="true"></i>Policy</li>
                         <li><i class="fa fa-history" aria-hidden="true"></i>History</li>
-                        <li><i class="fa fa-credit-card-alt" aria-hidden="true"></i></i>Investing</li>
+                        <li><i class="fa fa-credit-card-alt" aria-hidden="true"></i></i> Investing</li>
                     </ul>
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="app.js"></script>
     </body>
 </html>

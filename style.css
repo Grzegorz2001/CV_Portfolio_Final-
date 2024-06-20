@@ -268,3 +268,11 @@ p
         grid-template-columns: repeat(1,1fr);
     }
 }
+
+.timerc
+{
+    font-size: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
