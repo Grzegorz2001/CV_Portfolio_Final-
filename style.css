@@ -6,15 +6,17 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body
+body 
 {
     background: lightblue;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
-.container
+.container 
 {
     position: relative;
     width: 100%;
@@ -24,7 +26,7 @@ body
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+    grid-gap: 20px;
 }
 .container .left_Side
 {
@@ -150,9 +152,12 @@ body
     background: #fff;
     padding: 40px;
 }
-.about
+.about 
 {
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .about:last-child
 {
@@ -252,7 +257,6 @@ p
         grid-template-columns: repeat(2,1fr);
     }
 }
-
 @media (max-width: 600px)
 {
     .about .box .year_company
@@ -269,6 +273,35 @@ p
     }
 }
 
+@media (max-width: 768px) 
+{
+    body {
+        flex-direction: column;
+    }
+   .container {
+        grid-template-columns: 1fr;
+    }
+   .about {
+        margin-bottom: 20px;
+    }
+   .skills.box {
+        grid-template-columns: 1fr;
+    }
+   .interest ul {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+         grid-template-columns: 1fr;
+         grid-gap: 10px;
+     }
+ }
+ @media (max-width: 768px) {
+    .about {
+         margin-bottom: 20px;
+     }
+ }
 .timerc
 {
     font-size: 35px;
